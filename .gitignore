@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+.mplconfig/
+.matplotlib/
+.DS_Store
+
+data/*.csv
+data/*.csv.gz

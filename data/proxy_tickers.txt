@@ -1,0 +1,9 @@
+SPY
+QQQ
+IWM
+VTI
+^VIX
+^TNX
+^IRX
+HYG
+LQD

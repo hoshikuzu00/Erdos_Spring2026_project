@@ -1,0 +1,92 @@
+{
+  "downloaded_at_utc": "2026-03-17T18:50:07.030914+00:00",
+  "start": "2016-01-01",
+  "end_exclusive": "2026-01-01",
+  "datasets": {
+    "core_universe": {
+      "rows": 138270,
+      "tickers": [
+        "AAPL",
+        "ABBV",
+        "ADBE",
+        "AMGN",
+        "AMZN",
+        "AXP",
+        "BA",
+        "BAC",
+        "BLK",
+        "C",
+        "CAT",
+        "COP",
+        "COST",
+        "CRM",
+        "CVS",
+        "CVX",
+        "DIA",
+        "DIS",
+        "EOG",
+        "GE",
+        "GILD",
+        "GOOGL",
+        "GS",
+        "HD",
+        "HON",
+        "IWM",
+        "JNJ",
+        "JPM",
+        "KO",
+        "LLY",
+        "MCD",
+        "META",
+        "MRK",
+        "MS",
+        "MSFT",
+        "NKE",
+        "NVDA",
+        "ORCL",
+        "PEP",
+        "PFE",
+        "QQQ",
+        "SBUX",
+        "SCHW",
+        "SLB",
+        "SPY",
+        "TGT",
+        "TMO",
+        "TSLA",
+        "UNH",
+        "UPS",
+        "USB",
+        "VTI",
+        "WFC",
+        "WMT",
+        "XOM"
+      ],
+      "min_date": "2016-01-04",
+      "max_date": "2025-12-31"
+    },
+    "market_proxies": {
+      "rows": 10056,
+      "tickers": [
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "min_date": "2016-01-04",
+      "max_date": "2025-12-31"
+    },
+    "macro_credit_proxies": {
+      "rows": 12568,
+      "tickers": [
+        "HYG",
+        "LQD",
+        "^IRX",
+        "^TNX",
+        "^VIX"
+      ],
+      "min_date": "2016-01-04",
+      "max_date": "2025-12-31"
+    }
+  }
+}
