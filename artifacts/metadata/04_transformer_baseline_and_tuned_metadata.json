@@ -1,0 +1,160 @@
+{
+  "experiments": [
+    {
+      "name": "baseline_transformer",
+      "model_path": "/Users/chonggu/Documents/Mine/Erdos 2026 Spring final project/artifacts/models/baseline_transformer.pt",
+      "config": {
+        "lookback": 60,
+        "batch_size": 512,
+        "epochs": 25,
+        "patience": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "d_model": 64,
+        "nhead": 4,
+        "num_layers": 2,
+        "dim_feedforward": 128,
+        "dropout": 0.1,
+        "ticker_embedding_dim": 8
+      },
+      "feature_list": [
+        "abs_return",
+        "squared_return",
+        "high_low_log_range",
+        "log_volume",
+        "realized_vol_5d",
+        "realized_vol_21d",
+        "realized_vol_63d",
+        "hist_vol_5d",
+        "hist_vol_21d",
+        "volume_zscore_21d",
+        "abs_return_mean_5d",
+        "parkinson_vol_5d",
+        "mkt_SPY_proxy_return",
+        "mkt_SPY_proxy_hist_vol_5d",
+        "mkt_QQQ_proxy_return",
+        "mkt_QQQ_proxy_hist_vol_21d",
+        "mkt_IWM_proxy_return",
+        "macro_^VIX_proxy_level_zscore_21d",
+        "macro_^TNX_proxy_return",
+        "macro_HYG_proxy_return",
+        "macro_LQD_proxy_return"
+      ],
+      "best_epoch": 1,
+      "validation_metrics": {
+        "rmse": 0.14377102486876045,
+        "mae": 0.08363311948123002,
+        "qlike": -1.5602190494201156,
+        "corr": 0.433456932695302
+      },
+      "test_metrics": {
+        "rmse": 0.16790517745657876,
+        "mae": 0.09888280585180131,
+        "qlike": -1.2929950172576719,
+        "corr": 0.45772003878107653
+      }
+    },
+    {
+      "name": "tuned_fast_transformer",
+      "model_path": "/Users/chonggu/Documents/Mine/Erdos 2026 Spring final project/artifacts/models/tuned_fast_transformer.pt",
+      "config": {
+        "lookback": 90,
+        "batch_size": 512,
+        "epochs": 30,
+        "patience": 6,
+        "learning_rate": 0.0005,
+        "weight_decay": 0.0005,
+        "d_model": 128,
+        "nhead": 4,
+        "num_layers": 2,
+        "dim_feedforward": 256,
+        "dropout": 0.2,
+        "ticker_embedding_dim": 8
+      },
+      "feature_list": [
+        "abs_return",
+        "squared_return",
+        "high_low_log_range",
+        "log_volume",
+        "realized_vol_5d",
+        "realized_vol_21d",
+        "realized_vol_63d",
+        "hist_vol_5d",
+        "hist_vol_21d",
+        "volume_zscore_21d",
+        "abs_return_mean_5d",
+        "parkinson_vol_5d",
+        "mkt_SPY_proxy_return",
+        "mkt_SPY_proxy_hist_vol_5d",
+        "mkt_QQQ_proxy_return",
+        "mkt_QQQ_proxy_hist_vol_21d",
+        "mkt_IWM_proxy_return",
+        "macro_^VIX_proxy_level_zscore_21d",
+        "macro_^TNX_proxy_return",
+        "macro_HYG_proxy_return",
+        "macro_LQD_proxy_return",
+        "volume_zscore_5d",
+        "return_mean_5d",
+        "realized_vol_10d",
+        "parkinson_vol_21d",
+        "mkt_SPY_proxy_range",
+        "mkt_QQQ_proxy_range",
+        "mkt_IWM_proxy_range",
+        "macro_^VIX_proxy_return",
+        "macro_^VIX_proxy_hist_vol_5d",
+        "macro_^VIX_proxy_range"
+      ],
+      "best_epoch": 1,
+      "validation_metrics": {
+        "rmse": 0.1437992893344236,
+        "mae": 0.083680389432336,
+        "qlike": -1.5031603405636795,
+        "corr": 0.44191727914515844
+      },
+      "test_metrics": {
+        "rmse": 0.16419532649217877,
+        "mae": 0.09664500447912816,
+        "qlike": -1.2612839527915332,
+        "corr": 0.49472200506915176
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "model": "baseline_transformer",
+      "split": "validation",
+      "rmse": 0.14377102486876045,
+      "mae": 0.08363311948123002,
+      "qlike": -1.5602190494201156,
+      "corr": 0.433456932695302,
+      "best_epoch": 1
+    },
+    {
+      "model": "baseline_transformer",
+      "split": "test",
+      "rmse": 0.16790517745657876,
+      "mae": 0.09888280585180131,
+      "qlike": -1.2929950172576719,
+      "corr": 0.45772003878107653,
+      "best_epoch": 1
+    },
+    {
+      "model": "tuned_fast_transformer",
+      "split": "validation",
+      "rmse": 0.1437992893344236,
+      "mae": 0.083680389432336,
+      "qlike": -1.5031603405636795,
+      "corr": 0.44191727914515844,
+      "best_epoch": 1
+    },
+    {
+      "model": "tuned_fast_transformer",
+      "split": "test",
+      "rmse": 0.16419532649217877,
+      "mae": 0.09664500447912816,
+      "qlike": -1.2612839527915332,
+      "corr": 0.49472200506915176,
+      "best_epoch": 1
+    }
+  ]
+}
